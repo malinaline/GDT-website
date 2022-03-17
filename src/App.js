@@ -37,6 +37,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+             <AlertDismissibleExample />
         <RenderNavbar />
         <Main />
         <Main />
@@ -46,7 +47,7 @@ class App extends Component {
         <Main />
         <Newsletter />
         <Footer />
-        <AlertDismissibleExample />
+   
         
       </div>
     )

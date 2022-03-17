@@ -16,7 +16,7 @@ class RenderCard extends Component {
     </Card.Text>
     <Card.Title>ATT TVEKA</Card.Title>
     <Card.Text>
-      Vårens föreställning
+      Vårens föreställning lerom ipsum tjajaja tralala dfeuhfefefgeg huahduadhejdg vhdfiuhf dshfisudhf .
     </Card.Text>
     <Button variant="secondary">Boka biljetter</Button>
   </Card.Body>
