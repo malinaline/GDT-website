@@ -1,0 +1,50 @@
+ß
+
+
+body {
+  background-color: white;
+  padding: 40px;
+}
+
+.Navbar { 
+  color: pink;
+  text-align: left;
+  }
+
+  .Newsletter {
+    background-color: pink;
+    padding: 40px;
+  }
+
+
+.Footer {
+  background: pink;
+  padding: 50px;
+ 
+  text-align: left;
+
+}
+
+.Trailer {
+  background-color: pink;
+  padding: 50px;
+
+}
+
+.Main {
+  background-color: pink;
+  padding: 100px;
+}
+
+
+
+
+
+
+
+i {
+  float: right;
+  color: black;
+  padding: 10px;
+
+}
