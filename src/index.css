@@ -1,4 +1,4 @@
-ß
+
 
 
 body {
@@ -6,9 +6,15 @@ body {
   padding: 40px;
 }
 
+.Logo {
+  font-family: 'Smooch Sans', sans-serif;
+
+
+}
 .Navbar { 
   color: pink;
   text-align: left;
+  font-family: 'Smooch Sans', sans-serif;
   }
 
   .Newsletter {

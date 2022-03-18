@@ -11,8 +11,8 @@ class RenderNavbar extends Component {
     return (
       <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">GDT</Navbar.Brand>
-        <h5>  <FaTheaterMasks class="animate__animated animate__bounce" /></h5>
+        <Navbar.Brand className="Logo" href="#home"><h1>Göteborgs Dramatiska Teater</h1></Navbar.Brand>
+        <h4>  <FaTheaterMasks class="animate__animated animate__bounce" /></h4>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
