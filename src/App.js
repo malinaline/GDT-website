@@ -9,7 +9,7 @@ import RenderNavbar from './Navbar';
 import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
 import { Button } from 'bootstrap';
-import Newsletter from './Newsletter';
+
 
 
 //Cookie
@@ -29,7 +29,38 @@ function AlertDismissibleExample() {
   return <Button onClick={() => setShow(true)}>Show Alert</Button>;
 }
 
+// vill du ha vårt nyhetsbrev
 
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('Kanon! Följande email har registrerats: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form className='Newsletter' onSubmit={this.handleSubmit}>
+        <p>Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress nedan!</p>
+        <label> 
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="Submit" value="Skicka" />
+      </form>
+    );
+  }
+}
 
 
 
@@ -37,7 +68,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-             <AlertDismissibleExample />
+        <AlertDismissibleExample />
         <RenderNavbar />
         <Main />
         <Main />
@@ -45,10 +76,8 @@ class App extends Component {
         <RenderCard />
         <Main />
         <Main />
-        <Newsletter />
+        <NameForm />
         <Footer />
-   
-        
       </div>
     )
   }

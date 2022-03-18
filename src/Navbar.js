@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
+import { FaTheaterMasks } from 'react-icons/fa';
+
+
+
+
 
 class RenderNavbar extends Component {
   render() {
@@ -7,6 +12,7 @@ class RenderNavbar extends Component {
       <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">GDT</Navbar.Brand>
+       <FaTheaterMasks />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
