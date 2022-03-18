@@ -12,7 +12,7 @@ class RenderNavbar extends Component {
       <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">GDT</Navbar.Brand>
-       <FaTheaterMasks />
+        <h5>  <FaTheaterMasks class="animate__animated animate__bounce" /></h5>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
