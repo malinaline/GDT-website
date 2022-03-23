@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, FormLabel } from 'react-bootstrap';
 
 class Newsletter extends Component {
   render() {
     return (
+     
         <Form className="Newsletter">
         <Form.Group className="mb-3" controlId="formBasicEmail">
+        <FormLabel>Vill du ha vårt byhetsbrev?</FormLabel>
           <Form.Label>Vill prenumerera på vårt nyhetsbrev?</Form.Label>
           <Form.Control type="email" placeholder="exempel@mejl.se" />
           <Form.Text className="text-muted">
@@ -19,8 +21,10 @@ class Newsletter extends Component {
           Jag vill ha nyhetsbrev
         </Button>
       </Form>
+      
     )
   }
 }
 
 export default Newsletter
+

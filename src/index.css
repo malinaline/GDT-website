@@ -1,48 +1,53 @@
-
-
+ 
 
 body {
   background-color: white;
-  padding: 40px;
-}
-
-.Logo {
-  font-family: 'Smooch Sans', sans-serif;
-
 
 }
+
+
+
+
+
 .Navbar { 
-  color: pink;
   text-align: left;
-  font-family: 'Smooch Sans', sans-serif;
+  position: fixed;
+  
   }
 
   .Newsletter {
-    background-color: pink;
-    padding: 40px;
+    
+    padding: 5px;
   }
 
+  .About{
+  
+    padding: 5px;
+  }
 
 .Footer {
-  background: pink;
-  padding: 50px;
+  background: rgb(231, 74, 74);
+  padding: 10px;
  
   text-align: left;
 
 }
 
 .Trailer {
-  background-color: pink;
-  padding: 50px;
+
+  padding: 10px;
 
 }
 
 .Main {
-  background-color: pink;
-  padding: 100px;
+  padding: 5x;
 }
 
+.Accessability {
+  background-color: blanchedalmond;
+  padding: 10px;
 
+}
 
 
 
@@ -53,4 +58,13 @@ i {
   color: black;
   padding: 10px;
 
+}
+
+h2 {
+  color: solid;
+}
+
+.gdtLogo {
+  justify-content: center;
+  
 }

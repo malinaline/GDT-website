@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Badge } from 'react-bootstrap';
 import {IoTicketSharp} from 'react-icons/io5';
-import {AiFillEye} from 'react-icons/ai';
 
 
 class RenderCard extends Component {
   render() {
     return (
         <Card style={{ width: '18rem30' }}>
-  <Card.Img variant="top" src="carmen.jpg" />
+  <Card.Img variant="top" src="Stortorget_09_webb.jpg" />
   <Card.Body>
   <Card.Text>
+    <Badge bg="danger">Nyhet</Badge>
     </Card.Text>
-    <Card.Title>ATT TVEKA</Card.Title>
+    <Card.Title>Stortorget</Card.Title>
     <Card.Text>
       Vårens föreställning lerom ipsum tjajaja tralala dfeuhfefefgeg huahduadhejdg vhdfiuhf dshfisudhf
     </Card.Text>
     <Button variant="secondary"><IoTicketSharp /> Boka biljett</Button>
-    <Button variant="danger"><AiFillEye /> Läs mer</Button>
   </Card.Body>
 </Card>
 

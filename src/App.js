@@ -2,13 +2,18 @@ import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Main from './Main';
+import Accessability from './Accessability';
 import './index.css';
 import Trailer from './Trailer';
 import RenderCard from './Card';
+import RenderSecondCard from './SecondCard';
+import RenderThirdCard from './ThirdCard';
+import RenderAbout from './About';
 import RenderNavbar from './Navbar';
 import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
 import { Button } from 'bootstrap';
+import RenderLogo from './GdtLogo';
 
 
 
@@ -52,6 +57,7 @@ class NameForm extends React.Component {
   render() {
     return (
       <form className='Newsletter' onSubmit={this.handleSubmit}>
+        <h2>Prenumerera på vårt nyhetsbrev</h2>
         <p>Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress nedan!</p>
         <label> 
           <input type="text" value={this.state.value} onChange={this.handleChange} />
@@ -68,16 +74,18 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <AlertDismissibleExample />
         <RenderNavbar />
-        <Main />
-        <Main />
+        <RenderLogo />
         <Trailer />
         <RenderCard />
+        <RenderSecondCard />
+        <RenderThirdCard />
         <Main />
-        <Main />
+        <RenderAbout />
         <NameForm />
+        <Accessability />
         <Footer />
+        <AlertDismissibleExample />
       </div>
     )
   }
