@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
-import { FaTheaterMasks } from 'react-icons/fa';
+import { Navbar, Container, Nav, NavDropdown, NavItem} from 'react-bootstrap';
+
 
 
 
@@ -11,8 +11,7 @@ class RenderNavbar extends Component {
     return (
       <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand className="Logo" href="#home">GDT</Navbar.Brand>
-        <h4>  <FaTheaterMasks class="animate__animated animate__bounce" /></h4>
+      <image><img src="gdt-logo.svg" alt="Logga Göteborgs Dramatiska teater" width="75" height="" /></image>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
