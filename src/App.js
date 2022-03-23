@@ -75,7 +75,6 @@ class App extends Component {
     return (
       <div className="container">
         <RenderNavbar />
-        <Trailer />
         <RenderCard />
         <RenderSecondCard />
         <RenderThirdCard />

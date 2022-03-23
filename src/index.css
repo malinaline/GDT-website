@@ -1,19 +1,5 @@
  
 
-body {
-  background-color: white;
-
-}
-
-
-
-
-
-.Navbar { 
-  text-align: left;
-  position: fixed;
-  
-  }
 
   .Newsletter {
     
@@ -64,7 +50,3 @@ h2 {
   color: solid;
 }
 
-.gdtLogo {
-  justify-content: center;
-  
-}
