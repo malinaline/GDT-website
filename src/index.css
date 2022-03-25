@@ -1,41 +1,37 @@
  
+body {
+  background-color: lavender;
+  font-family: 'Quicksand', sans-serif;
 
+}
 
   .Newsletter {
-    
-    padding: 5px;
+    background-color: blanchedalmond;
+    padding: 30px;
   }
 
   .About{
-  
-    padding: 5px;
+    background-color: lavenderblush;
+    padding: 30px;
   }
 
 .Footer {
-  background: rgb(231, 74, 74);
+  
   padding: 10px;
  
   text-align: left;
 
 }
 
-.Trailer {
 
-  padding: 10px;
 
-}
 
-.Main {
-  padding: 5x;
-}
 
 .Accessability {
-  background-color: blanchedalmond;
-  padding: 10px;
+ 
+  padding: 30px;
 
 }
-
-
 
 
 

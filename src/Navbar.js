@@ -9,7 +9,7 @@ import { Navbar, Container, Nav, NavDropdown, NavItem} from 'react-bootstrap';
 class RenderNavbar extends Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="" expand="lg">
       <Container>
       <image><img src="gdt-logo.svg" alt="Logga Göteborgs Dramatiska teater" width="75" height="" /></image>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

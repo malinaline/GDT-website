@@ -6,7 +6,7 @@ import {IoTicketSharp} from 'react-icons/io5';
 class RenderThirdCard extends Component {
   render() {
     return (
-        <Card style={{ width: '18rem30' }}>
+        <Card ClassName="Card" style={{ width: '18rem30' }}>
   <Card.Img variant="top" src="Scum.jpg" />
   <Card.Body>
   <Card.Text>
@@ -16,7 +16,9 @@ class RenderThirdCard extends Component {
     <Card.Text>
       VAlerie Solanas is back moahhahahaha
     </Card.Text>
-    <Button variant="secondary"><IoTicketSharp /> Boka biljett</Button>
+    <Button variant="outline-danger" size="lg">
+  <IoTicketSharp />  Boka biljett
+  </Button>
   </Card.Body>
 </Card>
 

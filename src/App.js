@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Main from './Main';
 import Accessability from './Accessability';
 import './index.css';
-import Trailer from './Trailer';
 import RenderCard from './Card';
 import RenderSecondCard from './SecondCard';
 import RenderThirdCard from './ThirdCard';
@@ -12,8 +11,8 @@ import RenderAbout from './About';
 import RenderNavbar from './Navbar';
 import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
-import { Button } from 'bootstrap';
-import RenderLogo from './GdtLogo';
+import { Button } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 
 
@@ -31,7 +30,7 @@ function AlertDismissibleExample() {
       </Alert>
     );
   }
-  return <Button onClick={() => setShow(true)}>Show Alert</Button>;
+  return <Button variant="outline-danger" onClick={() => setShow(true)}>Om cookies</Button>;
 }
 
 // vill du ha vårt nyhetsbrev
@@ -68,22 +67,79 @@ class NameForm extends React.Component {
   }
 }
 
+//Carousel
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 h-50"
+          src="Scum.jpg"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+      
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 h-50"
+          src="Scum.jpg"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 h-50"
+          src="Scum.jpg"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+         
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+  
+
+    
 
 
 class App extends Component {
   render() {
     return (
       <div className="container">
+
         <RenderNavbar />
+        <ControlledCarousel />
+        <Main />
         <RenderCard />
+        <Main />
         <RenderSecondCard />
+        <Main />
         <RenderThirdCard />
         <Main />
         <RenderAbout />
         <NameForm />
         <Accessability />
+        <Main />
         <Footer />
         <AlertDismissibleExample />
+     
+        
+       
       </div>
     )
   }
