@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { Form, Button, FormLabel } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 class Newsletter extends Component {
   render() {
@@ -7,8 +8,7 @@ class Newsletter extends Component {
      
         <Form className="Newsletter">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <FormLabel>Vill du ha vårt byhetsbrev?</FormLabel>
-          <Form.Label>Vill prenumerera på vårt nyhetsbrev?</Form.Label>
+        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
           <Form.Control type="email" placeholder="exempel@mejl.se" />
           <Form.Text className="text-muted">
             Vi delar inte dina uppgifter till någon annan.
@@ -18,7 +18,7 @@ class Newsletter extends Component {
           <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
         </Form.Group>
         <Button variant="secondary" type="submit">
-          Jag vill ha nyhetsbrev
+          Submit
         </Button>
       </Form>
       

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Main from './Main';
@@ -13,8 +14,52 @@ import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 
+
+
+//newsletter // se över onclick - handleclick!!!!!!!!! rad 39
+
+function Newsletter() {
+const [name, setName] = useState(""); 
+
+    return (
+        <Form className="Newsletter">
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
+          <Form.Control type="email" placeholder="exempel@mejl.se" />
+          <Form.Text className="text-muted">
+            Vi delar inte dina uppgifter till någon annan.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
+        </Form.Group>
+        <Button variant="secondary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    )
+  }
+
+fetch("http://localhost:3000/users/new/123456", {
+  method: "POST",
+  headers: {
+      "Content-Type": "application/json",
+  },
+  body: JSON.stringify()    //vad ska jag skicka in här?
+})
+.then(res => res.json())
+.then(data => {
+  console.log(data)
+  
+});
+
+//https://www.youtube.com/watch?v=cxUoJV3lpkw (janne kemi visar)
+//EN ONCLICK SUMBMIT TJOSAN
+
+//Här ska in en funktion som sparar användare i databasen (?)))
 
 //Cookie
 function AlertDismissibleExample() {
@@ -33,39 +78,10 @@ function AlertDismissibleExample() {
   return <Button variant="outline-danger" onClick={() => setShow(true)}>Om cookies</Button>;
 }
 
-// vill du ha vårt nyhetsbrev
 
-class NameForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
+ 
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('Kanon! Följande email har registrerats: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form className='Newsletter' onSubmit={this.handleSubmit}>
-        <h2>Prenumerera på vårt nyhetsbrev</h2>
-        <p>Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress nedan!</p>
-        <label> 
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="Submit" value="Skicka" />
-      </form>
-    );
-  }
-}
 
 //Carousel
 function ControlledCarousel() {
@@ -114,7 +130,6 @@ function ControlledCarousel() {
 }
   
 
-    
 
 
 class App extends Component {
@@ -132,8 +147,8 @@ class App extends Component {
         <RenderThirdCard />
         <Main />
         <RenderAbout />
-        <NameForm />
         <Accessability />
+        <Newsletter />
         <Main />
         <Footer />
         <AlertDismissibleExample />
