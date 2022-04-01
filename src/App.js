@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import { makeInstaller } from 'install';
 
 
 
@@ -22,13 +23,14 @@ import Form from 'react-bootstrap/Form';
 //newsletter // se över onclick - handleclick!!!!!!!!! rad 39
 
 function Newsletter() {
-const [name, setName] = useState(""); 
+//const [name, setName] = useState(""); 
+const [email, setEmail] = useState('');
 
     return (
         <Form className="Newsletter">
         <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
-          <Form.Control type="email" placeholder="exempel@mejl.se" />
+          <Form.Control type="email" placeholder="exempel@mejl.se" /> 
           <Form.Text className="text-muted">
             Vi delar inte dina uppgifter till någon annan.
           </Form.Text>
@@ -43,12 +45,16 @@ const [name, setName] = useState("");
     )
   }
 
+
+  // deklarera newUser?
+  let newUser = {"userName": "jakob", "userEmail": "mjau@mail.se.se"}
+
 fetch("http://localhost:3000/users/new/123456", {
   method: "POST",
   headers: {
       "Content-Type": "application/json",
   },
-  body: JSON.stringify()    //vad ska jag skicka in här?
+  body: JSON.stringify(newUser)    //vad ska jag skicka in här? typ newUser?
 })
 .then(res => res.json())
 .then(data => {
@@ -56,10 +62,11 @@ fetch("http://localhost:3000/users/new/123456", {
   
 });
 
+
 //https://www.youtube.com/watch?v=cxUoJV3lpkw (janne kemi visar)
 //EN ONCLICK SUMBMIT TJOSAN
 
-//Här ska in en funktion som sparar användare i databasen (?)))
+//Här ska in en funktion som sparar användare i databasen (nej?)
 
 //Cookie
 function AlertDismissibleExample() {
