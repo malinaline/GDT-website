@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Main from './Main';
@@ -15,41 +14,43 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { makeInstaller } from 'install';
 
 
+// NEW USER FUNCTION
+//function addUser() {
+
+  // CREATE A VARIABEL FROM INPUT-VALUES
+  //let newUser = {id: "", userName: document.getElementById("newUserName").value, passWord: document.getElementById("newPassWord").value};
+  //console.log(newUser);
+
+  // CREATE A POST TO BACKEND
+  //fetch("http://localhost:3000/users/new", {method: "post", headers: {"Content-type": "application/json"}, body: JSON.stringify(newUser)})
+  //.then(resp => resp.json())
+ // .then(data => {
+ //     console.log(data);
+ //7 });
+//};
 
 
 //newsletter // se över onclick - handleclick!!!!!!!!! rad 39
 
 function Newsletter() {
 //const [name, setName] = useState(""); 
-const [email, setEmail] = useState('');
+const [email, setEmail] = useState('exempel@mail.se');
 
-    return (
-        <Form className="Newsletter">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
-          <Form.Control type="email" placeholder="exempel@mejl.se" /> 
-          <Form.Text className="text-muted">
-            Vi delar inte dina uppgifter till någon annan.
-          </Form.Text>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
-        </Form.Group>
-        <Button variant="secondary" type="submit">
-          Submit
-        </Button>
-      </Form>
-    )
+const handleChange = e => {
+  setEmail(e.target.value);
+};
+
+const handleSubmit = e => {
+
+  e.preventDefault()
+
+  const newUser = {
+    email: email
   }
 
-
-  // deklarera newUser?
-  let newUser = {"userName": "jakob", "userEmail": "mjau@mail.se.se"}
-
-fetch("http://localhost:3000/users/new/123456", {
+  fetch("http://localhost:3000/users/new/123456", {
   method: "POST",
   headers: {
       "Content-Type": "application/json",
@@ -59,8 +60,35 @@ fetch("http://localhost:3000/users/new/123456", {
 .then(res => res.json())
 .then(data => {
   console.log(data)
-  
-});
+})}
+
+
+
+    return (
+        <Form className="Newsletter">
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
+          <Form.Control type="text" value={email} onChange={handleChange}/> 
+          <Form.Text className="text-muted">
+            Vi delar inte dina uppgifter till någon annan.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
+        </Form.Group>
+        <Button onClick={handleSubmit} variant="secondary" type="submit"> 
+          Submit
+        </Button>
+      </Form>
+    )
+  }
+
+
+  // deklarera newUser?
+
+  //let newUser = {"userEmail": "hhej@mail.se"}
+
+
 
 
 //https://www.youtube.com/watch?v=cxUoJV3lpkw (janne kemi visar)
