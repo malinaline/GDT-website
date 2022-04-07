@@ -8,13 +8,14 @@ class RenderCard extends Component {
   render() {
     return (
 <CardGroup>
+
   <Card>
-    <Card.Img variant="top" src="bild.jpg" />
+    
+    <Card.Img variant="top" src="docklounge.jpg" />
     <Card.Body>
-      <Card.Title>Tjolahoppsan</Card.Title>
+      <Card.Title>Doc Lounge</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        Dock Lounge ä tillbaka 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -22,11 +23,11 @@ class RenderCard extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="Scum.jpg" />
+    <Card.Img variant="top" src="olgaravn.jpg" />
     <Card.Body>
-      <Card.Title>Scum-manifestet</Card.Title>
+      <Card.Title>Mitt arbete, nu i bokformat och på svenska</Card.Title>
       <Card.Text>
-      t was popularised in the 1960s et sheets containing Lorem Ipsum passages, and more recent simply dummy text{' '}
+      Olga Ravns bok som blev storslagen dansk teater som blev teater på svenska som nu släpps som bok på Ellerströms i dagarna! {' '}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -34,13 +35,11 @@ class RenderCard extends Component {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src="carmen.jpg" />
+    <Card.Img variant="top" src="gdt-goes-vr.jpg" />
     <Card.Body>
-      <Card.Title>Carmen</Card.Title>
+      <Card.Title>VR är det nya</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action. 
+     Nu ska ni får höra. Lorem ipsum trallalala.
       </Card.Text>
     </Card.Body>
     <Card.Footer>

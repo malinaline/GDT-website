@@ -17,10 +17,18 @@ class RenderSecondCard extends Component {
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </Card.Text>
     <div className="d-grid gap-2">
-  <Button variant="outline-danger" size="lg">
+  <Button variant="outline-danger" size="lg"
+  onClick={(e) => {
+    e.preventDefault();
+    window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
+    }}>
     Läs mer
   </Button>
-  <Button variant="outline-danger" size="lg">
+  <Button variant="outline-danger" size="lg"
+   onClick={(e) => {
+    e.preventDefault();
+    window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
+    }}>
   <IoTicketSharp /> Boka biljett
   </Button>
 </div>

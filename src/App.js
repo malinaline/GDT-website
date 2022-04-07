@@ -49,7 +49,8 @@ const handleSubmit = e => {
   const newUser = {
     email: email
   }
-
+//fetch ("mongodb+srv://gdtUser:gdtUserPassword@cluster0.fjhzd.mongodb.net/users?retryWrites=true&w=majority", {
+//fetch ("https://gdt-backend.herokuapp.com/users", {
   fetch("http://localhost:3000/users/new/123456", {
   method: "POST",
   headers: {
@@ -65,9 +66,11 @@ const handleSubmit = e => {
 
 
     return (
+    
         <Form className="Newsletter">
+            <h2>Vårt nyhetsbrev</h2>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
+        <Form.Label> Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress här </Form.Label>
           <Form.Control type="text" value={email} onChange={handleChange}/> 
           <Form.Text className="text-muted">
             Vi delar inte dina uppgifter till någon annan.
@@ -127,11 +130,13 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel id="nyheter" activeIndex={index} onSelect={handleSelect}>
+      
       <Carousel.Item>
+    
         <img
           className="d-block w-100 h-50"
-          src="Scum.jpg"
+          src="blixtra.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -139,9 +144,10 @@ function ControlledCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+     
         <img
           className="d-block w-100 h-50"
-          src="Scum.jpg"
+          src="mittarbete.jpg"
           alt="Second slide"
         />
 
@@ -150,9 +156,10 @@ function ControlledCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+
         <img
           className="d-block w-100 h-50"
-          src="Scum.jpg"
+          src="stortorget1.jpg"
           alt="Third slide"
         />
 

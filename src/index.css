@@ -1,6 +1,6 @@
  
 body {
-  background-color: lavender;
+  background-color: #e6e6fa;
   font-family: 'Quicksand', sans-serif;
 
 }
@@ -16,7 +16,8 @@ body {
   }
 
 .Footer {
-  
+  background-color:rgba(0, 0, 0, 0.938);
+  color: rgb(255, 255, 255);
   padding: 10px;
  
   text-align: left;
@@ -28,7 +29,7 @@ body {
 
 
 .Accessability {
- 
+background-color: thistle;
   padding: 30px;
 
 }

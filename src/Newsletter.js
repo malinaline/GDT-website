@@ -5,10 +5,10 @@ import Button from 'react-bootstrap/Button';
 class Newsletter extends Component {
   render() {
     return (
-     
+      <h2> Vill du ha vårt nyhetsbrev?</h2>
         <Form className="Newsletter">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>  Vill du ha vårt byhetsbrev? Fyll i din mejladress här</Form.Label>
+        <Form.Label> Fyll i din mejladress här</Form.Label>
           <Form.Control type="email" placeholder="exempel@mejl.se" />
           <Form.Text className="text-muted">
             Vi delar inte dina uppgifter till någon annan.

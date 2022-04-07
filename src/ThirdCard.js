@@ -14,9 +14,14 @@ class RenderThirdCard extends Component {
     </Card.Text>
     <Card.Title>SCUM-MANIFESTET</Card.Title>
     <Card.Text>
-      VAlerie Solanas is back moahhahahaha
+    Skitvarmt välkommen till en stunds avprogrammering. Manligheten har ju gjort hela världen till ett skitställe, men här skapar vi en ny plats för ohämmad vrede, kamplystnad och total kärlek. Skit i logiken.
     </Card.Text>
-    <Button variant="outline-danger" size="lg">
+    <Button
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
+      }}
+      variant="outline-danger" size="lg">
   <IoTicketSharp />  Boka biljett
   </Button>
   </Card.Body>

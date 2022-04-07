@@ -3,15 +3,14 @@ import React, {Component} from 'react'
 class RenderAbout extends Component {
   render() {
     return (
-      <div className="About">
-        <h2>Om Göteborgs Dramatiska teater</h2>
+      <div id="om" className="About">
+        <h2>Om oss</h2>
 
-      <p>GDT är en röst som vill göra det demokratiska samtalet levande genom utmanande scenkonst. 
-        Våra egna produktioner utgör basen i verksamheten, men GDT 
-        är också en scen för nationella och internationella gästspel. 
-        Teaterns scener och foajé är en levande mötesplats som även används för samtal, 
-        föreläsningar och musikarrangemang. 
-        GDT spelar också vissa föreställningar ute i Västra Götalandsregionen. </p>
+      <p>En fri professionell teatergrupp som bildades 2004 och som spelar kvalitativ nyskriven och klassisk teater för såväl barn som vuxna. Scenen finns i Stigbergsliden.
+
+Göteborgs Dramatiska Teater vill spegla samhället utanför ramarna och visa det som sker inför lyckta dörrar. Den vill ge röst åt de människor som inte syns, de som fördömts eller kommit i skymundan, visa på maktförhållanden och se verkligheten ur nya perspektiv. Detta har de ofta gjort genom att välja dramatik som skildrar sårbara och utsatta människor.
+
+De är ständigt på jakt efter färsk dramatik från Sverige och andra länder och väljer även klassiker. Ny text arbetas också fram tillsammans med författare. </p>
       </div>
     )
   }
