@@ -16,14 +16,22 @@ class RenderThirdCard extends Component {
     <Card.Text>
     Skitvarmt välkommen till en stunds avprogrammering. Manligheten har ju gjort hela världen till ett skitställe, men här skapar vi en ny plats för ohämmad vrede, kamplystnad och total kärlek. Skit i logiken.
     </Card.Text>
-    <Button
-    onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
-      }}
-      variant="outline-danger" size="lg">
-  <IoTicketSharp />  Boka biljett
+    <div className="d-grid gap-2">
+  <Button variant="outline-danger" size="lg"
+  onClick={(e) => {
+    e.preventDefault();
+    window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
+    }}>
+    Läs mer
   </Button>
+  <Button variant="outline-danger" size="lg"
+   onClick={(e) => {
+    e.preventDefault();
+    window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
+    }}>
+  <IoTicketSharp /> Boka biljett
+  </Button>
+</div>
   </Card.Body>
 </Card>
 

@@ -16,23 +16,7 @@ import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
 
-// NEW USER FUNCTION
-//function addUser() {
 
-  // CREATE A VARIABEL FROM INPUT-VALUES
-  //let newUser = {id: "", userName: document.getElementById("newUserName").value, passWord: document.getElementById("newPassWord").value};
-  //console.log(newUser);
-
-  // CREATE A POST TO BACKEND
-  //fetch("http://localhost:3000/users/new", {method: "post", headers: {"Content-type": "application/json"}, body: JSON.stringify(newUser)})
-  //.then(resp => resp.json())
- // .then(data => {
- //     console.log(data);
- //7 });
-//};
-
-
-//newsletter // se över onclick - handleclick!!!!!!!!! rad 39
 
 function Newsletter() {
 //const [name, setName] = useState(""); 
@@ -56,7 +40,7 @@ const handleSubmit = e => {
   headers: {
       "Content-Type": "application/json",
   },
-  body: JSON.stringify(newUser)    //vad ska jag skicka in här? typ newUser?
+  body: JSON.stringify(newUser)  
 })
 .then(res => res.json())
 .then(data => {
@@ -86,20 +70,10 @@ const handleSubmit = e => {
     )
   }
 
-
-  // deklarera newUser?
-
-  //let newUser = {"userEmail": "hhej@mail.se"}
-
-
-
-
 //https://www.youtube.com/watch?v=cxUoJV3lpkw (janne kemi visar)
-//EN ONCLICK SUMBMIT TJOSAN
 
-//Här ska in en funktion som sparar användare i databasen (nej?)
 
-//Cookie
+//Cookie - ska lyftas ut till egen modul
 function AlertDismissibleExample() {
   const [show, setShow] = useState(true);
 
@@ -121,7 +95,7 @@ function AlertDismissibleExample() {
 
 
 
-//Carousel
+//Carousel - ska lyftas ut till egen modul
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
