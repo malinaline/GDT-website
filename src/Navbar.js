@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { Navbar, Container, Nav, NavDropdown, NavItem} from 'react-bootstrap';
-
+import { FaTheaterMasks } from 'react-icons/fa';
+import { GiShinyApple } from "react-icons/gi";
+import { FaWheelchair, FaDeaf, FaBlind } from 'react-icons/fa';
+import { AiFillCamera } from "react-icons/ai";
 
 
 
@@ -16,13 +19,15 @@ class RenderNavbar extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#hem">Hem</Nav.Link>
-            <Nav.Link href="https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/">Biljetter</Nav.Link>
+            <Nav.Link href="https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/">Våra föreställningar</Nav.Link>
             <NavDropdown title="Mera" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#nyheter">Vårens nyheter</NavDropdown.Item>
-              <NavDropdown.Item href="#om">Om oss</NavDropdown.Item>
-              <NavDropdown.Item href="#infopedagoger">För pedagoger</NavDropdown.Item>
+              <NavDropdown.Item href="#om"><FaTheaterMasks /> Om oss</NavDropdown.Item>
+              <NavDropdown.Item href="#tillganglighet">
+               
+                <FaDeaf /> Om tillgänglighet</NavDropdown.Item>
+              <NavDropdown.Item href="#infopedagoger"><GiShinyApple /> För pedagoger</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#tillganglighet">Om tillgänglighet på teatern </NavDropdown.Item>
+              <NavDropdown.Item href="#"><AiFillCamera /> Press</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

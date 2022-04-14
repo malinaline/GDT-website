@@ -14,7 +14,7 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-
+import { FaMailchimp, FaCookieBite } from 'react-icons/fa';
 
 
 
@@ -54,7 +54,7 @@ const handleSubmit = e => {
         <Form className="Newsletter">
             <h2>Vårt nyhetsbrev</h2>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label> Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress här </Form.Label>
+        <Form.Label>Vill du ha vårt tjusiga nyhetsbrev? Fyll i din mejladress nedan: </Form.Label>
           <Form.Control type="text" value={email} onChange={handleChange}/> 
           <Form.Text className="text-muted">
             Vi delar inte dina uppgifter till någon annan.
@@ -64,7 +64,7 @@ const handleSubmit = e => {
           <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
         </Form.Group>
         <Button onClick={handleSubmit} variant="secondary" type="submit"> 
-          Submit
+          Signa!
         </Button>
       </Form>
     )
@@ -82,12 +82,13 @@ function AlertDismissibleExample() {
       <Alert variant="danger" onClose={() => setShow(false)} dismissible>
         <Alert.Heading>Vi älskar kakor!</Alert.Heading>
         <p>
-       Godkänn Cookies på sidan genom att kryssa ner den här rutan.
+        Webbplatsen använder cookies för att hjälpa oss ge dig den absolut bästa upplevelsen när du besöker oss. Läs mer om vår cookie policy. Genom att stänga detta meddelande godkänner du vår användning av dessa cookies samt att du har informerats.
         </p>
       </Alert>
     );
   }
-  return <Button variant="outline-danger" onClick={() => setShow(true)}>Om cookies</Button>;
+  return <Button variant="outline-danger" onClick={() => setShow(true)}>
+  <FaCookieBite /></Button>;
 }
 
 
