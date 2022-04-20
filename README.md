@@ -39,7 +39,7 @@ Start the server
 
 **Client:** React, React Bootstrap
 
-**Server:** Node, Express, MONGO DB ATLAS
+**Server:** Node, Express, MONGODB ATLAS
 
 
 ## Environment Variables
