@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Card, Button, Badge } from 'react-bootstrap';
 import {IoTicketSharp} from 'react-icons/io5';
+import { AiFillEye } from 'react-icons/ai';
 
 
 class RenderThirdCard extends Component {
@@ -22,7 +23,7 @@ class RenderThirdCard extends Component {
     e.preventDefault();
     window.location.href='https://kulturpunkten.nu/arrangorer/goteborgs-dramatiska-teater/';
     }}>
-    Läs mer
+    <AiFillEye /> Läs mer
   </Button>
   <Button variant="outline-danger" size="lg"
    onClick={(e) => {

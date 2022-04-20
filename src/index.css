@@ -16,14 +16,11 @@ body {
   }
 
 .Footer {
-  background-color:rgba(0, 0, 0, 0.938);
-  color: rgb(255, 255, 255);
-  padding: 10px;
- 
-  text-align: left;
+  background-color:lavenderblush;
+  padding: 30px;
+  
 
 }
-
 
 
 
@@ -45,5 +42,25 @@ i {
 
 h2 {
   color: solid;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+ a:visited {
+  color: black;
+}
+
+/* mouse over link */
+ a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: black;
 }
 

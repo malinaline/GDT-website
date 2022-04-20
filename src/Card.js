@@ -15,11 +15,16 @@ class RenderCard extends Component {
     <Card.Body>
       <Card.Title>Doc Lounge</Card.Title>
       <Card.Text>
-        Dock Lounge ä tillbaka 
+      Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <small className="text-muted">Uppdaterad för 1 timme sedan</small>
     </Card.Footer>
   </Card>
   <Card>
@@ -27,11 +32,16 @@ class RenderCard extends Component {
     <Card.Body>
       <Card.Title>Mitt arbete, nu i bokformat och på svenska</Card.Title>
       <Card.Text>
-      Olga Ravns bok som blev storslagen dansk teater som blev teater på svenska som nu släpps som bok på Ellerströms i dagarna! {' '}
+      Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+ {' '}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 2 days ago</small>
+      <small className="text-muted">Uppdaterad för 2 dagar sedan</small>
     </Card.Footer>
   </Card>
   <Card>
@@ -39,11 +49,18 @@ class RenderCard extends Component {
     <Card.Body>
       <Card.Title>VR är det nya</Card.Title>
       <Card.Text>
-     Nu ska ni får höra. Lorem ipsum trallalala.
+      Lorem ipsum dolor sit amet, 
+      consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse 
+      cillum dolore eu fugiat nulla pariatur. 
+    
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 1 week ago</small>
+      <small className="text-muted">Uppdaterad för 1 vecka sedan</small>
     </Card.Footer>
   </Card>
 </CardGroup>

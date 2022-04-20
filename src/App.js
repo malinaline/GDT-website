@@ -14,7 +14,7 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { FaMailchimp, FaCookieBite } from 'react-icons/fa';
+import { FaCookieBite } from 'react-icons/fa';
 
 
 
@@ -64,7 +64,7 @@ const handleSubmit = e => {
           <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
         </Form.Group>
         <Button onClick={handleSubmit} variant="secondary" type="submit"> 
-          Signa!
+          Skicka
         </Button>
       </Form>
     )
@@ -80,7 +80,7 @@ function AlertDismissibleExample() {
   if (show) {
     return (
       <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-        <Alert.Heading>Vi älskar kakor!</Alert.Heading>
+        <Alert.Heading> 🍪 Vi älskar kakor!</Alert.Heading>
         <p>
         Webbplatsen använder cookies för att hjälpa oss ge dig den absolut bästa upplevelsen när du besöker oss. Läs mer om vår cookie policy. Genom att stänga detta meddelande godkänner du vår användning av dessa cookies samt att du har informerats.
         </p>
@@ -88,7 +88,7 @@ function AlertDismissibleExample() {
     );
   }
   return <Button variant="outline-danger" onClick={() => setShow(true)}>
-  <FaCookieBite /></Button>;
+  🍪</Button>;
 }
 
 
