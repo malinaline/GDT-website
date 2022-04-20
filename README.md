@@ -4,7 +4,7 @@ This is a new website for a small theatre in Gothenburg.
 
 ## 👩‍💻 Authors
 
-- [@malinaline](https://www.github.com/octokatherine)
+- [@malinaline](https://www.github.com/malinaline)
 
 
 
