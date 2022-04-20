@@ -15,6 +15,8 @@ class Footer extends Component {
 
        <p>Med stöd från:</p>
        <img src="footer_logo-VG.png" alt="Logga Västra Götalandsregionen" width="100" height=""></img>
+
+       
       </div>
     )
   }
