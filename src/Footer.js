@@ -8,7 +8,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-       <h2>Följ oss på instagram</h2>
+       <h2>Följ oss på Instagram</h2>
      <p><a href="instagram.com"><FaInstagram /></a></p>
   
        <h2>Hitta hit</h2>
