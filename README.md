@@ -1,3 +1,5 @@
+
+
 # :rocket: GDT - Website (school project)
 
 This is a new website for a small theatre in Gothenburg.
@@ -6,6 +8,10 @@ This is a new website for a small theatre in Gothenburg.
 
 - [@malinaline](https://www.github.com/malinaline)
 
+
+## Screenshot
+
+![screenshot jpg](https://user-images.githubusercontent.com/75427957/164394370-626a2bb3-0219-4825-b389-f85273cde527.png)
 
 
 ## Run Locally
