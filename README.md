@@ -2,7 +2,7 @@
 
 # :rocket: GDT - Website (school project)
 
-This is the new website for a small theatre in Gothenburg.
+This is the new website for a small independent theatre in Gothenburg.
 
 ## 👩‍💻 Authors
 
@@ -40,23 +40,15 @@ Install dependencies
 Start the server
 
 ```bash
-  npm start
+  npx nodemon
 ```
 
 
 ## Tech Stack
 
-**Client:** React, React Bootstrap
+**Client:** React, React-Bootstrap
 
-**Server:** Node, Express, MONGODB ATLAS
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`DB_connection`
-
+**Server:** Node, Express, Mongo DB
 
 
 ## Related
