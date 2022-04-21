@@ -39,7 +39,7 @@ Install dependencies
 Start on Localhost
 
 ```bash
-  npn start
+  npm start
 ```
 
 
