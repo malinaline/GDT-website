@@ -13,7 +13,7 @@ Göteborgs Dramatiska Teater vill spegla samhället utanför ramarna och visa de
 De är ständigt på jakt efter färsk dramatik från Sverige och andra länder och väljer även klassiker. Ny text arbetas också fram tillsammans med författare. </p>
      
 <h2> Student, pensionär eller pank? <img src="money.gif" alt="pengar gif" width="50" height=""></img> </h2> 
-<p>Vi tycker att alla ska ha råd att gå på teater. Hos oss bestämmer du själv hur mycket din biljetter kostar.</p>
+<p>Vi tycker att alla ska ha råd att gå på teater. Hos oss bestämmer du själv hur mycket din biljett kostar.</p>
      
      
       </div>

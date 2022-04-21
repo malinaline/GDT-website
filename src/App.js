@@ -61,7 +61,7 @@ const handleSubmit = e => {
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Jag godkänner att GDT sparar min mejl-adress för utskick av nyhetsbrev." />
+          <Form.Check type="checkbox" label="Jag godkänner att Göteborgs Dramatiska Teater sparar min mejl-adress för utskick av nyhetsbrev." />
         </Form.Group>
         <Button onClick={handleSubmit} variant="secondary" type="submit"> 
           Skicka
