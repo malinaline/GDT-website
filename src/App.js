@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
-import Main from './Main';
 import Accessability from './Accessability';
 import './index.css';
 import RenderCard from './Card';
@@ -14,20 +13,21 @@ import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import { FaCookieBite } from 'react-icons/fa';
 
 
 
+// NEWSLETTER //
 function Newsletter() {
-//const [name, setName] = useState(""); 
+//const [name, setName] = useState(""); //Here you can add a name input
 const [email, setEmail] = useState('exempel@mail.se');
 
+//Handle Change from input
 const handleChange = e => {
   setEmail(e.target.value);
 };
-
+//Handle Submit from submit button
 const handleSubmit = e => {
-
+// Prevent site from reloading
   e.preventDefault()
 
   const newUser = {
@@ -47,7 +47,7 @@ const handleSubmit = e => {
   console.log(data)
 })}
 
-
+//render Newsletter section
 
     return (
     
@@ -73,7 +73,7 @@ const handleSubmit = e => {
 //https://www.youtube.com/watch?v=cxUoJV3lpkw (janne kemi visar)
 
 
-//Cookie - ska lyftas ut till egen modul
+//COOKIE - ska lyftas ut till egen modul
 function AlertDismissibleExample() {
   const [show, setShow] = useState(true);
 
@@ -96,7 +96,7 @@ function AlertDismissibleExample() {
 
 
 
-//Carousel - ska lyftas ut till egen modul
+//CAROUSEL- ska lyftas ut till egen modul
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -156,17 +156,12 @@ class App extends Component {
 
         <RenderNavbar />
         <ControlledCarousel />
-        <Main />
         <RenderCard />
-        <Main />
         <RenderSecondCard />
-        <Main />
         <RenderThirdCard />
-        <Main />
         <RenderAbout />
         <Accessability />
         <Newsletter />
-        <Main />
         <Footer />
         <AlertDismissibleExample />
      
