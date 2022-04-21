@@ -11,8 +11,9 @@ This is the new website for a small theatre in Gothenburg.
 
 ## Screenshot
 
-![screenshot mobile](https://user-images.githubusercontent.com/75427957/164499920-83ad450a-f368-4935-906c-ad9fc2c62c95.png)![screenshot2](https://user-images.githubusercontent.com/75427957/164499946-63d4fc7d-9096-449c-9759-e1943a0492b2.png)
-![Uploading screenshot-ipad.png…]()
+![screenshot mobile](https://user-images.githubusercontent.com/75427957/164500703-dd256df1-6ec5-4ec7-95a7-ce5502a476cd.png)
+![screenshot2](https://user-images.githubusercontent.com/75427957/164500719-cece617b-6d0d-4dd4-bd19-f9370ebda5a3.png)
+
 
 
 
