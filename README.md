@@ -36,10 +36,10 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start on Localhost
 
 ```bash
-  npx nodemon
+  npn start
 ```
 
 
