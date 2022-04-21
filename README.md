@@ -47,7 +47,7 @@ Start on Localhost
 
 **Client:** React, React-Bootstrap
 
-**Server:** Node, Express, Mongo DB
+**Server:** Node, Express, MongoDB
 
 
 ## Related
