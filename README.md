@@ -2,7 +2,7 @@
 
 # :rocket: GDT - Website (school project)
 
-This is a new website for a small theatre in Gothenburg.
+This is the new website for a small theatre in Gothenburg.
 
 ## 👩‍💻 Authors
 
